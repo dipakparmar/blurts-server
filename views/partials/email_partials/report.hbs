@@ -20,6 +20,7 @@
     {{#if breachAlert}}
       {{> email_partials/breach_alert supportedLocales=supportedLocales}}
       {{> email_partials/email_hibp_attribution}}
+      {{> email_partials/email_faqs}}
       {{> email_partials/report_what_to_do_next}}
     {{else}}
       {{#ifCompare unsafeBreachesForEmail.length ">" 0}}

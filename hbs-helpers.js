@@ -148,6 +148,31 @@ function breachMath(lValue, operator = null, rValue = null) {
   return returnValue;
 }
 
+const breachAlertFaq = (args) => {
+  const supportedLocales = args.data.root.supportedLocales;
+  const faqs = [
+    {
+      "stringId" : "faq1",
+      "stringDescription": "I don't recognize this website. Why am I in this breach?",
+      "href": "https://support.mozilla.org/kb/firefox-monitor-faq#w_i-donaot-recognize-this-company-or-website-why-am-i-in-this-breach",
+    },
+    {
+      "stringId" : "faq2",
+      "stringDescription": "Why did it take so long to notify me of this breach?",
+      "href": "https://support.mozilla.org/kb/firefox-monitor-faq#w_how-far-back-do-data-breaches-in-the-firefox-monitor-database-go",
+    },
+    {
+      "stringId" : "faq3",
+      "stringDescription": "How do I know this is a legitimate email from Firefox Monitor?",
+      "href": "https://support.mozilla.org/kb/firefox-monitor-faq#w_how-do-i-know-these-emails-are-really-from-firefox-and-not-from-a-hacker",
+    },
+  ];
+  faqs.forEach(faq => {
+    faq.stringId = fluentFormat(supportedLocales, faq.stringId, args);
+  });
+  return faqs;
+};
+
 
 module.exports = {
   fluentFormat,
@@ -162,4 +187,5 @@ module.exports = {
   ifCompare,
   breachMath,
   loop,
+  breachAlertFaq,
 };
