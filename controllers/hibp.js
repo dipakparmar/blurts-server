@@ -69,7 +69,7 @@ async function notify (req, res) {
     if (!notifiedSubscribers.includes(email)) {
       await EmailUtils.sendEmail(
         email,
-        LocaleUtils.fluentFormat(supportedLocales, "hibp-notify-email-subject"),
+        LocaleUtils.fluentFormat(supportedLocales, "breach-alert-subject"),
         "default_email",
         {
           email,

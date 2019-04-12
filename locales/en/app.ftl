@@ -28,8 +28,6 @@ error-hibp-throttled = Too many connections to {-brand-HIBP}.
 error-hibp-connect = Error connecting to {-brand-HIBP}.
 error-hibp-load-breaches = Could not load breaches.
 
-hibp-notify-email-subject = {-product-name} Alert: Your account was involved in a breach.
-
 home-title = {-product-name}
 home-not-found = Page not found.
 
@@ -459,3 +457,5 @@ get-your-report-and-sign-up= Get your report and sign up for alerts.
 
 # Link title
 frequently-asked-questions=Frequently Asked Questions
+
+breach-alert-subject= {-product-name} found your email in a new data breach.
