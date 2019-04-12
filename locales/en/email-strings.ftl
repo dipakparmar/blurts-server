@@ -48,9 +48,6 @@ report-subhead-no-breaches =
 report-subhead-found-breaches =
   Here’s your full Firefox Monitor report, which includes all known data breaches that contain this email address. 
 
-breach-alert-headline = Your account was involved in a data breach.
-breach-alert-subhead = A recently reported data breach contains your email and the following data
-
 report-pwt-blurb = 
   Passwords are so valuable, that thousands of them are stolen every day and traded or sold on the black market. 
   Stronger passwords protect your accounts and all the personal information that resides inside them. 
@@ -78,13 +75,29 @@ report-pwt-summary-4 =
 # A link to legal information about mozilla products.
 legal = Legal
 
-# Share Firefox Monitor by email subject line
-share-by-email-subject = See if you’ve been part of a data breach.
 
-# Share Firefox Monitor by email message. {"https://monitor.firefox.com"} should not be translated or modified. 
-share-by-email-message = 
-    Hi,
-    {-brand-name} has a free service where you can check to see if you’ve been part of a data breach. Here’s how it works:
-    1. Go to {"https://monitor.firefox.com"} and search your email.
-    2. See if your online accounts have been exposed in a data breach.
-    3. Get tips from {-product-name} about what to do next.
+breach-alert-subject={-product-name} found your email in a new data breach.
+your-info-was-discovered-headline=Your information was discovered in a new data breach.
+your-info-was-discovered-blurb=You’re signed up to receive Firefox Monitor alerts when your email appears in a data breach. Here’s what we know about this breach.
+what-to-do-after-breach=What to do after a data breach
+
+ba-next-step-1= Change your password to a strong, unique password.
+ba-next-step-blurb-1=
+  A strong password uses a combination of upper and lowercase letters, 
+  special characters, and numbers. It doesn’t contain personal info like 
+  your address, birthday, or family names.
+
+ba-next-step-2= Stop using that exposed password entirely.
+ba-next-step-blurb-2= Stop using that exposed password entirely.
+  Cyber criminals could find your password on the dark web and use it 
+  to log in to your other accounts. The best way to protect your accounts 
+  is to use unique passwords for each one.
+
+ba-next-step-3= Get help creating better passwords and keeping them safe.
+ba-next-step-blurb-3=
+  Use a password manager to create strong, unique passwords. Password managers securely store all your 
+  logins so you can access them across all your devices.
+
+faq1= I don’t recognize this company or website. Why am I in this breach?
+faq2= Why did it take so long to notify me of this breach?
+faq3= How do I know this is a legitimate email from Firefox Monitor?
