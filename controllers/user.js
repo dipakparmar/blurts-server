@@ -354,7 +354,7 @@ async function getBreachStats(req, res) {
     });
   }
   const fxaResponse = await FXA.verifyOAuthToken(req.token, FXA_MONITOR_SCOPE);
-  if (fxaResponse.name === "HTTPError") {
+  if (fxaResponse.name === "HTTPError" || !fxaResponse.body.scope.includes(FXA_MONITOR_SCOPE)) {
     return res.status(fxaResponse.statusCode).json({
       errorMessage: "Could not verify FXA OAuth token. FXA returned message: " + fxaResponse.statusMessage,
     });
